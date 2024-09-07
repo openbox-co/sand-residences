@@ -1,0 +1,7 @@
+---
+const {content = await Astro.slots.render('content'), sx} = Astro.props;
+---
+
+<section class={`flex justify-center items-center border-b border-blueBroker pb-2 cursor-pointer bg-transparent ${sx} styledButton`}>
+  {content && <slot name="content">{content}</slot>}
+</section>
