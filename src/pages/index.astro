@@ -1,5 +1,8 @@
 ---
 import '../styles/global.css'
+import Navbar from '@/components/react/Navbar'
+import FormSection from '@/components/react/FormSection'
+import { ViewTransitions } from 'astro:transitions';
 ---
 
 <html lang="en">
@@ -9,8 +12,10 @@ import '../styles/global.css'
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Poseidonia</title>
+		<ViewTransitions transition:persist />
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<Navbar url={Astro.url}  client:load  />
+		<FormSection client:load />
 	</body>
 </html>
