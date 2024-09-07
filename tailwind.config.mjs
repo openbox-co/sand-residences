@@ -3,6 +3,11 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     extend: {
+      colors: {
+        blackBroker: "#212121",
+        blueBroker: "#4099D1",
+        grayBroker: "#D9D9D9",
+      },
       fontFamily: {
         primary: ["SFPro", "sans-serif"],
       },
