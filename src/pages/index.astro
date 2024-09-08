@@ -3,6 +3,12 @@ import '../styles/global.css'
 import Navbar from '@/components/react/Navbar'
 import FormSection from '@/components/react/FormSection'
 import { ViewTransitions } from 'astro:transitions';
+import ContentMotion from "@/components/react/ContentMotion";
+import Welcome from "@/components/UI/Welcome.astro";
+import Details from "@/components/UI/Details.astro";
+import ApartmentsSection from "@/components/UI/Apartments/ApartmentsSection.astro";
+import Banner from "@/components/UI/Banner.astro";
+import Amenities from "@/components/UI/Amenities/Amenities.astro";
 ---
 
 <html lang="en">
@@ -16,6 +22,29 @@ import { ViewTransitions } from 'astro:transitions';
 	</head>
 	<body>
 		<Navbar url={Astro.url}  client:load  />
-		<FormSection client:load />
+		<FormSection client:load /> 
+		<ContentMotion client:visible sx='mt-20 md:mt-[180px]'>
+			<Welcome />
+		</ContentMotion>
+		<ContentMotion client:visible sx='mt-20 md:mt-[180px] pb-[120px] rounded-br-[40px] rounded-bl-[40px] bg-white absoluteTop'>
+			<Details client:visible />
+		</ContentMotion>
+		 <section class="bg-blueBroker w-full h-[500px]">
+		</section> 
+	 <ContentMotion client:visible sx='rounded-tl-[40px] rounded-tr-[40px] bg-white absoluteBottom'>
+			<section class="absoluteHalf px-[30px]">
+				<div class="bg-grayBroker max-w-xl mx-auto h-[400px] rounded-3xl">
+				</div>
+			</section>
+		</ContentMotion> 
+		<ContentMotion client:visible sx='absoluteBottomContent'>
+			<ApartmentsSection />
+		</ContentMotion> 
+		<Banner client:visible />
+		<section class="bg-grayBroker w-full h-[720px]">
+		</section> 
+		<ContentMotion client:visible sx='mt-20 md:mt-[180px]'>
+			<Amenities />
+		</ContentMotion> 
 	</body>
 </html>
