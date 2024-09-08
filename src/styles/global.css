@@ -61,6 +61,25 @@ body {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .absoluteFooter {
+    transform: translate(0%, 15%) !important;
+  }
+  .absoluteFooterContent {
+    transform: translate(0%, 15%) !important;
+    margin-left: 300px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .absoluteFooter {
+    transform: translate(0%, 15%) !important;
+  }
+  .absoluteFooterContent {
+    transform: translate(0%, 15%) !important;
+  }
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(100vw);
