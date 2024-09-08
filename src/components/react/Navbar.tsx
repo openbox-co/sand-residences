@@ -13,7 +13,7 @@ export default function Navbar({ url }: Props) {
       viewport={{ once: true }}
       transition={{ ease: 'easeOut', duration: 0.8 }}
       className="w-full sticky top-0 z-40 h-full bg-white">
-      <section className="flex justify-between items-center w-full max-w-[1600px] px-[30px] md:px-[50px]  mx-auto py-5 transition-all ease-in-out">
+      <section className="flex justify-between items-center w-full max-w-[1600px] px-[30px] md:px-[50px] mx-auto py-5 transition-all ease-in-out">
         <a href='/' className="flex items-center">
           <img
             width={319}
