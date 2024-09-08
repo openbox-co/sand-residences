@@ -1,0 +1,54 @@
+---
+import Apartments from "../Apartments/Apartments.astro";
+import Button from "../Button.astro";
+
+---
+<section class="flex flex-col gap-y-7 justify-center items-center px-[30px] md:px-[50px] transition-all ease-in-out">
+  <h2 
+    style={{
+      fontSize: "clamp(42px, 3vw, 50px)",
+      lineHeight: "clamp(42px, 3vw, 58px)",
+    }}
+  class="font-primary text-blackBroker text-center font-bold">
+    Conoce <span class="text-blueBroker">nuestros </br> modelos </span> de apartamentos
+  </h2>
+  <Button sx='w-fit mt-5'>
+    <Fragment slot="content">
+      <a href="/">
+        <p class="text-blueBroker hover:text-opacity-85 font-primary">Brochure y Disponibilidad</p>
+    </a>
+    </Fragment>
+  </Button>
+  <section class="flex gap-x-4">
+    <section class="flex flex-col lg:flex-row gap-4">
+      <section class="my-auto">
+        <Apartments
+          image="../assets/images/FormImg1.svg"
+        />
+      </section>
+      <section class="flex flex-col gap-y-5">
+        <Apartments
+          image="../assets/images/FormImg1.svg"
+        />
+        <Apartments
+          image="../assets/images/FormImg1.svg"
+        />
+      </section>  
+    </section>
+    <section class="flex flex-col lg:flex-row gap-4">
+      <section class="flex flex-col gap-y-4">
+        <Apartments
+          image="../assets/images/FormImg1.svg"
+        />
+        <Apartments
+          image="../assets/images/FormImg1.svg"
+        />
+      </section>  
+      <section class="my-auto">
+        <Apartments
+          image="../assets/images/FormImg1.svg"
+        />
+      </section>
+    </section>
+  </section>  
+</section>

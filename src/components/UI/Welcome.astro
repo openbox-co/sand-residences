@@ -1,0 +1,41 @@
+---
+import Button from "./Button.astro";
+
+---
+
+<section class="max-w-[1600px] mx-auto px-[30px] md:px-[50px] transition-all ease-in-out">
+  <section class="flex flex-col-reverse flex-grow lg:grid lg:grid-cols-2 gap-5">
+    <section class="flex h-full w-full gap-5 justify-end lg:justify-start">
+      <section>
+        <img src="../assets/images/WelcomeImg1.svg" alt="Image1" title="Image1" class="justify-center mt-[80px]" />
+      </section>
+      <section>
+        <img src="../assets/images/WelcomeImg2.svg" alt="Image2" title="Image2" class="justify-center" />
+        <Button sx='w-fit mt-5 hidden lg:block'>
+          <Fragment slot="content">
+            <a href="/">
+              <p class="text-blueBroker hover:text-opacity-85 font-primary">¡Reserva tu cita hoy!</p>
+           </a>
+          </Fragment>
+        </Button>
+      </section>
+    </section>
+    <section class="flex flex-col justify-center h-fit gap-y-10 w-full md:max-w-3xl lg:w-full">
+      <h2
+        class="font-bold max-w-2xl leading-10 text-[36px] break-words font-primary"
+      >
+      Bienvenidos a Poseidonia Residences Cana Bay
+      </h2>
+      <h3 class="leading-8 break-words font-light font-primary">
+        Poseidonia Residences en Cana Bay es un desarrollo residencial de lujo que combina la elegancia clásica con la comodidad moderna. Ubicado en el exclusivo complejo Cana Bay en Punta Cana, este proyecto ofrece un estilo de vida sofisticado y sereno. Inspirado en las villas históricas europeas, Poseidonia Residences brinda una experiencia de lujo mediterráneo en un entorno tropical caribeño, pensado para quienes buscan tranquilidad y confort en un espacio exclusivo.
+      </h3>
+      <Button sx='w-fit flex lg:hidden'>
+        <Fragment slot="content">
+         <a href="/">
+            <p class="text-blueBroker hover:text-opacity-85">¡Reserva tu cita hoy!</p>
+         </a>
+        </Fragment>
+      </Button>
+    </section>
+  </section>
+</section>
