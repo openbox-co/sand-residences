@@ -1,6 +1,6 @@
 ---
 import Apartments from "../Apartments/Apartments.astro";
-import Button from "../Button.astro";
+import Button from "../Buttons/Button.astro";
 
 ---
 <section class="flex flex-col gap-y-7 justify-center items-center px-[30px] md:px-[50px] transition-all ease-in-out">
@@ -12,11 +12,11 @@ import Button from "../Button.astro";
   class="font-primary text-blackBroker text-center font-bold">
     Conoce <span class="text-blueBroker">nuestros </br> modelos </span> de apartamentos
   </h2>
-  <Button sx='w-fit mt-5'>
+  <Button sx='w-fit mt-5 border-blueBroker' sxIcon='!text-blueBroker'>
     <Fragment slot="content">
-      <a href="/">
-        <p class="text-blueBroker hover:text-opacity-85 font-primary">Brochure y Disponibilidad</p>
-    </a>
+      <a href="/" class="text-blueBroker hover:text-opacity-85 font-primary">
+        Brochure y Disponibilidad
+     </a>
     </Fragment>
   </Button>
   <section class="flex gap-x-4">
