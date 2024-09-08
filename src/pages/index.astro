@@ -9,6 +9,8 @@ import Details from "@/components/UI/Details.astro";
 import ApartmentsSection from "@/components/UI/Apartments/ApartmentsSection.astro";
 import Banner from "@/components/UI/Banner.astro";
 import Amenities from "@/components/UI/Amenities/Amenities.astro";
+import AmenitiesZone from "@/components/UI/Amenities/AmenitiesZone.astro";
+import Footer from "@/components/UI/Footer.astro";
 ---
 
 <html lang="en">
@@ -43,10 +45,21 @@ import Amenities from "@/components/UI/Amenities/Amenities.astro";
 		<Banner client:visible />
 		<section class="bg-grayBroker w-full h-[720px]">
 		</section> 
-		<ContentMotion client:visible sx='mt-20 md:mt-[80px]'>
+		<ContentMotion client:visible sx='mt-20 md:mt-[80px] mb-[80px]'>
 			<Amenities />
 		</ContentMotion> 
-		<section class=" w-full mt-[200px]">
-		</section> 
+		<AmenitiesZone />
+		<ContentMotion client:visible sx='rounded-bl-[40px] rounded-br-[40px] bg-white absoluteFooter'>
+			<section class="absoluteFooterContent px-[30px]">
+				<iframe
+					class="mx-auto max-w-2xl w-[800px] h-[400px] rounded-3xl"
+					src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=10.96785693995,-74.79259371757509&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+					allowfullscreen=""
+					loading="lazy"
+				>
+				</iframe>
+			</section>
+		</ContentMotion> 
+		<Footer />
 	</body>
 </html>
