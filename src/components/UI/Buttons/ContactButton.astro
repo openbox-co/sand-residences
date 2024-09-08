@@ -1,0 +1,13 @@
+---
+const {content, sx, icon = await Astro.slots.render('icon'), href} = Astro.props;
+---
+
+<a 
+  aria-label="Contact Button"
+  href={href}
+  target="_blank"
+  rel="noopener noreferrer"
+  class={`flex gap-x-2 justify-center items-center border border-[#FFFFFF33] py-1 px-[14px] rounded-xl cursor-pointer bg-transparent  ${sx}`}>
+  {icon && <slot name="icon">{icon}</slot>}
+  {content && <p class="text-white font-normal font-primary text-[14px]">{content}</p> }
+</a>
