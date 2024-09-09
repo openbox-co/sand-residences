@@ -21,7 +21,7 @@ export default function Navbar({ url }: Props) {
             src="../assets/Logo.svg"
             alt="Poseidonia"
             title="Poseidonia"
-            className="justify-center">
+            className="justify-center w-[200px] sm:w-[319px]">
           </img>
         </a>
         <SwitchLang url={url} />
