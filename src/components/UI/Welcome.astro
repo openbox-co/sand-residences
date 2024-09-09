@@ -1,5 +1,6 @@
 ---
 import Button from "./Buttons/Button.astro";
+const { t } = Astro.props;
 ---
 
 <section class="max-w-[1600px] mx-auto px-[30px] md:px-[50px] transition-all ease-in-out">
@@ -13,7 +14,7 @@ import Button from "./Buttons/Button.astro";
         <Button sx='w-fit mt-5 hidden lg:flex border-blueBroker' sxIcon='!text-blueBroker'>
           <Fragment slot="content">
             <a href="/" aria-label="Reserve" target="_blank" class="text-blueBroker hover:text-opacity-85 font-primary">
-              ¡Reserva tu cita hoy!
+              ¡{t('welcome_button')}!
            </a>
           </Fragment>
         </Button>
@@ -23,15 +24,15 @@ import Button from "./Buttons/Button.astro";
       <h2
         class="font-bold max-w-2xl leading-10 text-[36px] break-words font-primary"
       >
-      Bienvenidos a Poseidonia Residences Cana Bay
+      {t('welcome')} Poseidonia Residences Cana Bay
       </h2>
       <h3 class="leading-8 break-words font-light font-primary">
-        Poseidonia Residences en Cana Bay es un desarrollo residencial de lujo que combina la elegancia clásica con la comodidad moderna. Ubicado en el exclusivo complejo Cana Bay en Punta Cana, este proyecto ofrece un estilo de vida sofisticado y sereno. Inspirado en las villas históricas europeas, Poseidonia Residences brinda una experiencia de lujo mediterráneo en un entorno tropical caribeño, pensado para quienes buscan tranquilidad y confort en un espacio exclusivo.
+        {t('welcome_subtitle')}
       </h3>
       <Button sx='w-fit flex lg:hidden border-blueBroker' sxIcon='!text-blueBroker'>
         <Fragment slot="content">
           <a href="/" aria-label="Reserve" target="_blank" class="text-blueBroker hover:text-opacity-85 font-primary">
-            ¡Reserva tu cita hoy!
+            ¡{t('welcome_button')}!
          </a>
         </Fragment>
       </Button>
