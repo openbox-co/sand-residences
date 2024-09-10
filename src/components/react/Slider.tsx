@@ -8,38 +8,23 @@ export default function Slider() {
   const data = [
     {
       id: 1,
-      image: '../assets/images/FormImg1.svg',
-      description: 'Day 1: Arrival in Kathmandu',
+      image: '../assets/images/Slider1.webp',
+      description: 'Relájate y disfruta del sol caribeño en nuestro exclusivo y lujoso Beach Club.',
     },
     {
       id: 2,
-      image: '../assets/images/FormImg1.svg',
-      description: 'Day 2: Kathmandu to Lukla and Phakding',
+      image: '../assets/images/Slider2.webp',
+      description: 'Relájate y disfruta del sol caribeño en nuestro exclusivo y lujoso Beach Club.',
     },
     {
       id: 3,
-      image: '../assets/images/FormImg1.svg',
-      description: 'Day 3: Phakding to Namche Bazaar',
+      image: '../assets/images/Slider3.webp',
+      description: 'Relájate y disfruta del sol caribeño en nuestro exclusivo y lujoso Beach Club.',
     },
     {
       id: 4,
-      image: '../assets/images/FormImg1.svg',
-      description: 'Day 4: Acclimatization day in Namche Bazaar',
-    },
-    {
-      id: 5,
-      image: '../assets/images/FormImg1.svg',
-      description: 'Day 5: Namche Bazaar to Tengboche',
-    },
-    {
-      id: 6,
-      image: '../assets/images/FormImg1.svg',
-      description: 'Day 6: Tengboche to Dingboche',
-    },
-    {
-      id: 7,
-      image: '../assets/images/FormImg1.svg',
-      description: 'Day 7: Acclimatization day in Dingboche',
+      image: '../assets/images/Slider1.webp',
+      description: 'Relájate y disfruta del sol caribeño en nuestro exclusivo y lujoso Beach Club.',
     },
   ]
   return (
@@ -90,10 +75,10 @@ export default function Slider() {
         }
       </Swiper>
       <section className="flex justify-between arrows-container">
-        <div className="swiper-button-prev border rounded-full p-2 border-blueBroker flex justify-center items-center cursor-pointer">
+        <div className="swiper-button-prev border rounded-full p-2 border-blueBroker flex justify-center items-center cursor-pointer mt-5">
           <ChevronLeftIcon className="h-5 w-5 text-blueBroker" />
         </div>
-        <div className="swiper-button-next border rounded-full p-2 border-blueBroker flex justify-center items-center cursor-pointer">
+        <div className="swiper-button-next border rounded-full p-2 border-blueBroker flex justify-center items-center cursor-pointer mt-5">
           <ChevronRightIcon className="h-5 w-5 text-blueBroker" />
         </div>
       </section>
