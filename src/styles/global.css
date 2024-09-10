@@ -29,10 +29,69 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 0px;
   height: 6px;
 }
 
 ::-webkit-scrollbar:window-inactive {
   display: none;
+}
+
+.absoluteTop {
+  transform: translate(0%, 10%) !important;
+}
+
+.absoluteHalf {
+  transform: translate(0%, -50%) !important;
+}
+
+.absoluteBottom {
+  transform: translate(0%, -10%) !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .absoluteBottomContent {
+    transform: translate(0%, -15%) !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .absoluteBottomContent {
+    transform: translate(0%, -10%) !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .absoluteFooter {
+    transform: translate(0%, 15%) !important;
+  }
+  .absoluteFooterContent {
+    transform: translate(0%, 15%) !important;
+    margin-left: 300px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .absoluteFooter {
+    transform: translate(0%, 15%) !important;
+  }
+  .absoluteFooterContent {
+    transform: translate(0%, 15%) !important;
+  }
+}
+
+.absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }

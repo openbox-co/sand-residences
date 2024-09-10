@@ -1,0 +1,30 @@
+---
+import ContactButton from "../Buttons/ContactButton.astro";
+import BottomFooter from "./BottomFooter.astro";
+import TopFooter from "./TopFooter.astro";
+import { EnvelopeIcon, PhoneArrowDownLeftIcon } from '@heroicons/react/24/solid'
+---
+
+  <footer class="bg-blueBroker w-full pt-[180px] lg:pt-[100px] pb-10">
+    <section class="max-w-[1600px] mx-auto px-[30px] md:px-[50px] transition-all ease-in-out">
+      <article class="flex flex-col justify-center items-center lg:justify-start lg:items-start">
+        <div class="w-[190px] h-[100px] bg-grayBroker" />
+        <section class="flex gap-x-[6px] my-10">
+          <ContactButton content="(809) 000-0000" sx='w-fit' href='tel:+8090000000'>
+            <Fragment slot="icon">
+              <PhoneArrowDownLeftIcon strokeWidth='3' className="w-[18px] h-[18px] text-white" />
+            </Fragment>
+          </ContactButton>
+          <ContactButton content="info@gmail.com.do" sx='w-fit' href='mailto:info@gmail.com.do'>
+            <Fragment slot="icon">
+              <EnvelopeIcon strokeWidth='3' className="w-[18px] h-[18px] text-white" />
+            </Fragment>
+            </ContactButton>
+        </section>
+      </article>
+      <TopFooter />
+      <div class="h-[1px] w-full bg-grayBroker my-10 md:my-[48px] lg:my-[56px] ease-in-out transition-all">
+      </div>
+      <BottomFooter />
+    </section>
+  </footer> 

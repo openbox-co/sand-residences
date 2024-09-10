@@ -1,0 +1,8 @@
+---
+const {image} = Astro.props;
+---
+<section class="rounded-[22px] border bg-whiteContainBroker border-[#0000000F] p-5">
+  {image && 
+    <img src={image} alt='Apartement' title='Apartment' class="w-full h-full"/>
+    }
+</section>

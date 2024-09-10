@@ -1,0 +1,60 @@
+---
+import Apartments from "../Apartments/Apartments.astro";
+import Button from "../Buttons/Button.astro";
+import Render1 from "@/assets/render1.webp";
+import Render2 from "@/assets/render2.webp";
+import Render3 from "@/assets/render3.webp";
+import Render4 from "@/assets/render4.webp";
+import Render5 from "@/assets/render5.webp";
+import Render6 from "@/assets/render6.webp";
+---
+
+<section class="flex flex-col gap-y-7 justify-center items-center px-[30px] md:px-[50px] transition-all ease-in-out">
+  <h2 
+    style={{
+      fontSize: "clamp(42px, 3vw, 50px)",
+      lineHeight: "clamp(42px, 3vw, 58px)",
+    }}
+  class="font-primary text-blackBroker text-center font-bold">
+    Conoce <span class="text-blueBroker">nuestros </br> modelos </span> de apartamentos
+  </h2>
+  <Button sx='w-fit mt-5 border-blueBroker' sxIcon='!text-blueBroker'>
+    <Fragment slot="content">
+      <a href="/" aria-label="Brochure and Availability" class="text-blueBroker hover:text-opacity-85 font-primary">
+        Brochure y Disponibilidad
+     </a>
+    </Fragment>
+  </Button>
+  <section class="flex gap-x-4">
+    <section class="flex flex-col lg:flex-row gap-4">
+      <section class="my-auto">
+        <Apartments
+          image={Render1.src}
+        />
+      </section>
+      <section class="flex flex-col gap-y-5">
+        <Apartments
+          image={Render2.src}
+        />
+        <Apartments
+          image={Render3.src}
+        />
+      </section>  
+    </section>
+    <section class="flex flex-col lg:flex-row gap-4">
+      <section class="flex flex-col gap-y-4">
+        <Apartments
+          image={Render4.src}
+        />
+        <Apartments
+          image={Render5.src}
+        />
+      </section>  
+      <section class="my-auto">
+        <Apartments
+          image={Render6.src}
+        />
+      </section>
+    </section>
+  </section>  
+</section>

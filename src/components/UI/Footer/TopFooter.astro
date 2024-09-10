@@ -1,0 +1,91 @@
+---
+import Button from "../Buttons/Button.astro";
+
+---
+
+<article class="grid grid-cols-1 lg:grid-cols-2 gap-y-10 gap-x-5">
+  <section class="flex justify-center items-center lg:justify-start lg:items-start flex-col font-primary text-white">
+    <h2 class="text-center lg:text-start max-w-2xl lg:max-w-md font-light leading-7">
+      Tu propiedad ideal, sea apartamento o casa en venta o alquiler 
+      en Santo Domingo y la República Dominicana con <span class="font-semibold">los mejores agentes expertos inmobiliarios.</span>
+    </h2>
+    <div class="flex gap-x-5">
+      <Button sx='w-fit mt-5'>
+        <Fragment slot="content">
+          <a href="/" aria-label="Let's talk" target="_blank">
+            <p class="hover:text-opacity-85">Conversemos</p>
+         </a>
+        </Fragment>
+      </Button>
+      <Button sx='w-fit mt-5'>
+        <Fragment slot="content">
+          <a href="/" aria-label="Write to us" target="_blank">
+            <p class="hover:text-opacity-85">Escríbenos</p>
+         </a>
+        </Fragment>
+      </Button>
+    </div>
+  </section>
+  <section class="grid grid-col-1 md:grid-cols-4 gap-10">
+    <div class="flex flex-col gap-y-1 font-primary text-white text-[16px] font-light text-center md:text-start">
+      <h3 class="font-medium mb-3">
+        Nosotros
+      </h3>
+      <a href="/">
+        Historia
+      </a>  
+      <a href="/">
+        Agentes
+      </a>
+      <a href="/">
+        Forma Parte
+      </a>
+      <a href="/">
+        La Experiencia
+      </a>
+    </div>
+    <div class="flex flex-col gap-y-1 font-primary text-white text-[16px] font-light text-center md:text-start">
+      <h3 class="font-medium mb-3">
+        Santo Domingo
+      </h3>
+      <a href="/">
+        Bella Vista
+      </a>  
+      <a href="/">
+        El Millón
+      </a>
+      <a href="/">
+        Ensanche Naco
+      </a>
+      <a href="/">
+        Evaristo Morales
+      </a>
+    </div>
+    <div class="flex flex-col gap-y-1 font-primary text-white text-[16px] font-light text-center md:text-start">
+      <h3 class="font-medium mb-3">
+       Zona Oriental
+      </h3>
+      <a href="/">
+       Alma Rosa I
+      </a>  
+      <a href="/">
+       Autopista San Isidro
+      </a>
+      <a href="/">
+       Av. Ecólogica
+      </a>
+      <a href="/">
+       Ensanche Ozama
+      </a>
+    </div>
+    <div class="flex flex-col gap-y-1 font-primary text-white text-[16px] font-light text-center md:text-start">
+      <h3 class="font-medium mb-3">
+       Certificados por
+      </h3>
+      <section class="flex flex-col gap-y-1 items-center md:items-start">
+        <img src="../assets/Group.svg" alt="Group" class="w-[40px] h-[40px] bg-grayBroker" />
+        <img src="../assets/Group.svg" alt="Group" class="w-[40px] h-[40px] bg-grayBroker" />
+      </section>
+    </div>
+  </section>
+</article> 

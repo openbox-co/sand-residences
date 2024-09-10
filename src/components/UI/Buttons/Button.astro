@@ -1,0 +1,9 @@
+---
+const {content = await Astro.slots.render('content'), sx, sxIcon} = Astro.props;
+import { ArrowUpRightIcon } from '@heroicons/react/24/solid'
+---
+
+<section class={`flex gap-x-1 justify-center items-center border-b pb-2 cursor-pointer bg-transparent ${sx}`}>
+  {content && <slot name="content">{content}</slot>}
+  <ArrowUpRightIcon strokeWidth='3' className={`w-[18px] h-[18px] text-white ${sxIcon}`} />
+</section>
