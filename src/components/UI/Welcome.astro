@@ -1,5 +1,7 @@
 ---
 import Button from "./Buttons/Button.astro";
+import Image4 from "@/assets/Image4.webp";
+import Image5 from "@/assets/Image5.webp";
 const { t } = Astro.props;
 ---
 
@@ -7,10 +9,10 @@ const { t } = Astro.props;
   <article class="flex flex-col-reverse flex-grow lg:grid lg:grid-cols-2 gap-5">
     <article class="flex h-full w-full gap-5 justify-end lg:justify-start">
       <div>
-        <img src="../assets/images/WelcomeImg1.svg" alt="Image1" title="Image1" class="justify-center mt-[80px]" />
+        <img src={Image4.src} alt="Image4" title="Image4" class="justify-center mt-[80px] rounded-[20px]" />
       </div>
       <div>
-        <img src="../assets/images/WelcomeImg2.svg" alt="Image2" title="Image2" class="justify-center" />
+        <img src={Image5.src} alt="Image5" title="Image5" class="justify-center rounded-[20px]" />
         <Button sx='w-fit mt-5 hidden lg:flex border-blueBroker' sxIcon='!text-blueBroker'>
           <Fragment slot="content">
             <a href="/" aria-label="Reserve" target="_blank" class="text-blueBroker hover:text-opacity-85 font-primary">

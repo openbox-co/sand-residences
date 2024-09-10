@@ -1,4 +1,7 @@
 import { motion } from "framer-motion";
+import Image1 from "@/assets/Image1.webp"
+import Image2 from "@/assets/Image2.webp"
+import Image3 from "@/assets/Image3.webp"
 
 export default function FormSection() {
   return (
@@ -24,11 +27,11 @@ export default function FormSection() {
         <section className="flex md:justify-center lg:justify-start">
           <section className="flex gap-x-5">
             <section className="flex flex-col gap-y-5">
-              <img src="../assets/images/FormImg1.svg" alt="Image1" title="Image1" className="justify-center rounded-[20px]" />
-              <img src="../assets/images/FormImg2.svg" alt="Imag2" title="Image2" className="justify-center rounded-[20px]" />
+              <img src={Image1.src} alt="Image1" title="Image1" className="justify-center rounded-[20px]" />
+              <img src={Image2.src} alt="Imag2" title="Image2" className="justify-center rounded-[20px]" />
             </section>
             <section className="my-auto">
-              <img src="../assets/images/FormImg3.svg" alt="Image3" title="Image3" className="justify-center rounded-[20px]" />
+              <img src={Image3.src} alt="Image3" title="Image3" className="justify-center rounded-[20px]" />
             </section>
           </section>
         </section>
