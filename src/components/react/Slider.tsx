@@ -1,5 +1,5 @@
 import 'swiper/css';
-import { FreeMode, Keyboard, Mousewheel, Navigation, Pagination } from 'swiper/modules';
+import { FreeMode, Keyboard, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide, } from 'swiper/react';
 import SliderItem from "./SliderItem";
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid'
