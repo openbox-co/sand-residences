@@ -80,6 +80,13 @@ body {
   }
 }
 
+.absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 @keyframes marquee {
   0% {
     transform: translateX(100vw);

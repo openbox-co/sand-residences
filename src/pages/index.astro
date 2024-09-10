@@ -12,6 +12,7 @@ import Amenities from "@/components/UI/Amenities/Amenities.astro";
 import AmenitiesZone from "@/components/UI/Amenities/AmenitiesZone.astro";
 import Footer from "@/components/UI/Footer/Footer.astro";
 import { getLangFromUrl, useTranslations } from "@/utils/i18n";
+import Tour3D from "@/components/UI/Tour3D.astro";
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
@@ -44,8 +45,7 @@ const t = useTranslations(lang);
 			<ApartmentsSection />
 		</ContentMotion> 
 		<Banner client:visible />
-		<section class="bg-grayBroker w-full h-[720px]">
-		</section> 
+		<Tour3D /> 
 		<Amenities />
 		<AmenitiesZone />
 		<ContentMotion client:visible sx='!rounded-bl-[40px] !rounded-br-[40px] bg-white absoluteFooter'>
