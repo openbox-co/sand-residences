@@ -1,44 +1,51 @@
 ---
 import ContentMotion from "@/components/react/ContentMotion";
 import ItemDetails from "../ItemDetails.astro";
+import Drink from "@/assets/svg/Drink.svg";
+import Food from "@/assets/svg/Food.svg";
+import Folio from "@/assets/svg/Folio.svg";
+import LockB from "@/assets/svg/LockB.svg";
+import UmbrellaB from "@/assets/svg/UmbrellaB.svg";
+import Plane from "@/assets/svg/Plane.svg";
+const { t } = Astro.props;
 ---
 
 <ContentMotion client:visible sx='mt-20 md:mt-[80px] mb-[60px]'>
   <section class="max-w-[1600px] mx-auto px-[30px] md:px-[50px] transition-all ease-in-out">
     <article class="flex justify-end items-end w-full">
-      <h2 class="font-primary text-[36px] font-bold max-w-xs md:max-w-full leading-[44px] text-right">
-        <span class="text-blueBroker">Comodidades</span> de la zona
+      <h2 class="font-primary text-[36px] font-bold max-w-md md:max-w-full leading-[44px] text-right">
+        <span class="text-blueBroker">{t('private_location_blue')}</span> {t('private_location_black')}
       </h2>
     </article>
     <article class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full max-w-5xl mx-auto gap-10 mt-[60px]">
       <ItemDetails 
-        icon="../assets/Group.svg" 
-        content="A 5 minutos del municipio de Miches" 
+        icon={Drink.src}
+        content={t('private_item1')}
         sx="!items-start"
       />
       <ItemDetails 
-        icon="../assets/Group.svg" 
-        content="Posibilidades de inversión que ofrecen una rentabilidad elevada" 
+        icon={Food.src}
+        content={t('private_item2')}
         sx="!items-start"
       />
       <ItemDetails 
-        icon="../assets/Group.svg" 
-        content="La ubicación óptima en el centro del Mar Caribe"
+        icon={Folio.src}
+        content={t('private_item3')}
         sx="!items-start"
       />
       <ItemDetails 
-        icon="../assets/Group.svg" 
-        content="Un entorno que favorece la inversión por parte de extranjeros"
+        icon={LockB.src}
+        content={t('private_item4')}
         sx="!items-start"
       />
       <ItemDetails 
-        icon="../assets/Group.svg" 
-        content="Aeropuerto accesible con vuelos a todo el mundo, a solo 1 hora y 45 minutos de distancia" 
+        icon={UmbrellaB.src}
+        content={t('private_item5')}
         sx="!items-start"
       />
       <ItemDetails 
-        icon="../assets/Group.svg" 
-        content="Un sector turístico en constante expansión" 
+        icon={Plane.src} 
+        content={t('private_item6')}
         sx="!items-start"
       />
     </article>

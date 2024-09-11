@@ -15,7 +15,7 @@ export default function Slider({ url }: SliderProps) {
   const data = [
     {
       id: 1,
-      image: '../assets/images/Slider1.webp',
+      image: '../assets/images/Slider3.webp',
       title: t('slider1Title'),
       description: t('slider1'),
     },

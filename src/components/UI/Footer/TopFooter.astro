@@ -4,6 +4,7 @@ import { EnvelopeIcon, PhoneArrowDownLeftIcon } from '@heroicons/react/24/solid'
 import RealBroker from "@/assets/RealBroker.png"
 import Certificate from "@/assets/svg/Certificate.svg"
 import ContactButton from "../Buttons/ContactButton.astro";
+const { t } = Astro.props;
 ---
 <section>
   <article class="flex flex-col justify-center items-center lg:justify-start lg:items-start">
@@ -29,21 +30,20 @@ import ContactButton from "../Buttons/ContactButton.astro";
   <article class="grid grid-cols-1 lg:grid-cols-2 gap-y-10 gap-x-5">
     <section class="flex justify-center items-center lg:justify-start lg:items-start flex-col font-primary text-white">
       <h2 class="text-center lg:text-start max-w-2xl lg:max-w-md font-light leading-7">
-        Tu propiedad ideal, sea apartamento o casa en venta o alquiler 
-        en Santo Domingo y la República Dominicana con <span class="font-semibold">los mejores agentes expertos inmobiliarios.</span>
+        {t('footer_title')} <span class="font-semibold">{t('footer_title_bold')}</span>
       </h2>
       <div class="flex gap-x-5">
         <Button sx='w-fit mt-5'>
           <Fragment slot="content">
             <a href="/" aria-label="Let's talk" target="_blank">
-              <p class="hover:text-opacity-85">Conversemos</p>
+              <p class="hover:text-opacity-85">{t('footer_button')}</p>
            </a>
           </Fragment>
         </Button>
         <Button sx='w-fit mt-5'>
           <Fragment slot="content">
             <a href="/" aria-label="Write to us" target="_blank">
-              <p class="hover:text-opacity-85">Escríbenos</p>
+              <p class="hover:text-opacity-85">{t('footer_button2')}</p>
            </a>
           </Fragment>
         </Button>
@@ -52,7 +52,7 @@ import ContactButton from "../Buttons/ContactButton.astro";
     <section class="flex flex-col justify-center items-center lg:items-start lg:flex-row gap-10">
       <div class="flex flex-col gap-y-1 font-primary text-white text-[16px] font-light text-center lg:text-start">
         <h3 class="font-medium mb-3">
-          Nuestra Oficina
+          {t('footer_our_office')}
         </h3>
         <p class="max-w-xs">
           C. Georgilio Mella Chavier 10, local 201, edificio La goma, sector los prados, Santo Domingo 10132 D.N.
@@ -60,7 +60,7 @@ import ContactButton from "../Buttons/ContactButton.astro";
       </div>
       <div class="flex flex-col gap-y-1 font-primary text-white text-[16px] font-light text-center md:text-start">
         <h3 class="font-medium mb-3">
-         Certificados por
+          {t('footer_certified')}
         </h3>
         <section class="flex flex-col gap-y-1 items-center lg:items-start">
           <img src={Certificate.src} alt="Certificate" title="Certificate" class="w-[108px] h-[108px]" />
