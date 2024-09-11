@@ -47,7 +47,7 @@ import ImageDivider from "../../../public/assets/images/dividerbg.webp";
 		<Banner t={t} client:visible />
 		<Tour3D t={t} /> 
 		<Amenities />
-		<AmenitiesZone />
+		<AmenitiesZone t={t} />
 		<ContentMotion client:visible sx='!rounded-bl-[40px] !rounded-br-[40px] bg-white absoluteFooter'>
 			<section class="absoluteFooterContent px-[30px]">
 				<iframe
@@ -59,6 +59,6 @@ import ImageDivider from "../../../public/assets/images/dividerbg.webp";
 				</iframe>
 			</section>
 		</ContentMotion> 
-		<Footer client:visible />
+		<Footer t={t} client:visible />
 	</body>
 </html>
