@@ -30,26 +30,24 @@ export default function FormSection({ url }: FormSectionProps) {
           >
             {t('title')} <span className="text-blueBroker">Poseidonia</span> Residences <span className="text-blueBroker">Cana Bay</span>
           </h1>
-          <div className="w-full xl:max-w-[700px] border rounded-[22px] border-[#0000000F] mt-5 bg-cover">
-            <iframe
-              loading="lazy"
-              id="myIframe"
-              src="https://realbroker.alterestate.com/formulario-residencia-poseidonia"
-              width="100%"
-              height="100%"
-              title="Poseidonia Form"
-              className="min-h-[500px] lg:min-h-[500px] max-h-full mx-auto w-full rounded-[22px] transition-all ease-in-out"
-            ></iframe>
-          </div>
+          <iframe
+            loading="lazy"
+            id="myIframe"
+            src="https://realbroker.alterestate.com/formulario-residencia-poseidonia"
+            width="550px"
+            height="480px"
+            title="Poseidonia Form"
+            className="min-w-[280px] w-fit md:w-[420px] xl:w-[550px] border rounded-[22px] border-[#0000000F] transition-all ease-in-out mt-5"
+          ></iframe>
         </section>
         <section className="flex md:justify-center lg:justify-start">
           <section className="flex gap-x-5">
             <section className="flex flex-col gap-y-5">
-              <img src={Image1.src} alt="Image1" title="Image1" className="justify-center rounded-[20px]" />
-              <img src={Image2.src} alt="Imag2" title="Image2" className="justify-center rounded-[20px]" />
+              <img src={Image1.src} alt="Image1" title="Image1" className="rounded-[20px]" />
+              <img src={Image2.src} alt="Imag2" title="Image2" className="rounded-[20px]" />
             </section>
             <section className="my-auto">
-              <img src={Image3.src} alt="Image3" title="Image3" className="justify-center rounded-[20px]" />
+              <img src={Image3.src} alt="Image3" title="Image3" className="rounded-[20px]" />
             </section>
           </section>
         </section>
