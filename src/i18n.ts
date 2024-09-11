@@ -52,6 +52,31 @@ export const i18n = {
     slider4Title: "Canchas de Pádel",
     slider4:
       "Vive la adrenalina del pádel en nuestras canchas de primer nivel, para torneos y juegos casuales.",
+    //PrivilegedLocation
+    private_location_blue: "Ubicación Privilegiada",
+    private_location_black: "En Cana Bay",
+    private_item1:
+      "Hard Rock Hotel & Casino: Un destino popular para entretenimiento y ocio.",
+    private_item2:
+      "Centro de Punta Cana: Con tiendas, restaurantes y actividades culturales.",
+    private_item3:
+      "Disfruta de todos los servicios que necesitas en la propiedad y en espacios próximos.",
+    private_item4:
+      "Servicios de seguridad de primer nivel, para garantizar la tranquilidad de todos los residentes.",
+    private_item5:
+      "Playa de Arena Gorda:Una de las playas más espectaculares de la República Dominicana.",
+    private_item6:
+      "Aeropuerto Internacional de Punta Cana: A solo unos minutos en coche, facilitando el acceso a conexiones internacionales.",
+    //Footer
+    footer_title:
+      "Tu propiedad ideal, sea apartamento o casa en venta o alquiler en Santo Domingo y la República Dominicana con",
+    footer_title_bold: "los mejores agentes expertos inmobiliarios.",
+    footer_button: "Conversemos",
+    footer_button2: "Escríbenos",
+    footer_our_office: "Nuestra Oficina",
+    footer_certified: "Certificados por",
+    all_rights: "Todos los derechos reservados",
+    developed_by: "Diseñado y Desarrollado por Open Box",
   },
   en: {
     //Form
@@ -97,5 +122,30 @@ export const i18n = {
     slider4Title: "Paddle Tennis Courts",
     slider4:
       "Experience the adrenaline of paddle tennis on our top-level courts, for tournaments and casual games.",
+    //PrivilegedLocation
+    private_location_blue: "Privileged Location",
+    private_location_black: "In Cana Bay",
+    private_item1:
+      "Hard Rock Hotel & Casino: A popular destination for entertainment and leisure.",
+    private_item2:
+      "Punta Cana Center: With shops, restaurants, and cultural activities.",
+    private_item3:
+      "Enjoy all the services you need on the property and in nearby spaces.",
+    private_item4:
+      "First-rate security services, to ensure the tranquility of all residents.",
+    private_item5:
+      "Arena Gorda Beach: One of the most spectacular beaches in the Dominican Republic.",
+    private_item6:
+      "Punta Cana International Airport: Just a few minutes by car, facilitating access to international connections.",
+    //Footer
+    footer_title:
+      "Your ideal property, whether it's an apartment or house for sale or rent in Santo Domingo and the Dominican Republic with",
+    footer_title_bold: "the best real estate expert agents.",
+    footer_button: "Let's talk",
+    footer_button2: "Write to us",
+    footer_our_office: "Our Office",
+    footer_certified: "Certified by",
+    all_rights: "All rights reserved",
+    developed_by: "Designed and Developed by Open Box",
   },
 };
