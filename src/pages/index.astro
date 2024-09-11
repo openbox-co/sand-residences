@@ -29,29 +29,29 @@ import ImageDivider from "../../public/assets/images/dividerbg.webp";
 	</head>
 	<body>
 		<Navbar url={Astro.url}  client:load  />
-		<FormSection client:load /> 
+		<FormSection url={Astro.url} client:load /> 
 		<ContentMotion client:visible sx='mt-20 md:mt-[180px]'>
 			<Welcome t={t} />
 		</ContentMotion>
-			<Details client:visible />
-			<img src={ImageDivider.src} alt="ImageDivider" title="ImageDivider" class="w-full h-[500px] object-cover" />
+			<Details t={t}  client:visible />
+			<img src={ImageDivider.src} alt="ImageDivider" title="ImageDivider" class="w-full h-[460px] object-cover" />
 	 <ContentMotion client:visible sx='rounded-tl-[40px] rounded-tr-[40px] bg-white absoluteBottom'>
 			<section class="absoluteHalf px-[30px]">
-				<div class="bg-grayBroker max-w-xl mx-auto h-[400px] rounded-3xl">
+				<div class="bg-grayBroker max-w-3xl mx-auto h-[400px] rounded-3xl">
 				</div>
 			</section>
 		</ContentMotion> 
 		<ContentMotion client:visible sx='absoluteBottomContent'>
-			<ApartmentsSection />
+			<ApartmentsSection t={t}  />
 		</ContentMotion> 
-		<Banner client:visible />
-		<Tour3D /> 
+		<Banner t={t} client:visible />
+		<Tour3D t={t} /> 
 		<Amenities />
 		<AmenitiesZone />
 		<ContentMotion client:visible sx='!rounded-bl-[40px] !rounded-br-[40px] bg-white absoluteFooter'>
 			<section class="absoluteFooterContent px-[30px]">
 				<iframe
-					class="mx-auto w-full lg:max-w-[600px] h-[400px] rounded-3xl"
+					class="mx-auto w-full lg:max-w-[800px] h-[400px] rounded-3xl"
 					src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=10.96785693995,-74.79259371757509&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
 					allowfullscreen=""
 					loading="lazy"
