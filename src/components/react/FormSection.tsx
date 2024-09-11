@@ -2,8 +2,15 @@ import { motion } from "framer-motion";
 import Image1 from "@/assets/Image1.webp"
 import Image2 from "@/assets/Image2.webp"
 import Image3 from "@/assets/Image3.webp"
+import { getLangFromUrl, useTranslations } from "@/utils/i18n";
 
-export default function FormSection() {
+interface FormSectionProps {
+  url: URL
+}
+
+export default function FormSection({ url }: FormSectionProps) {
+  const lang = getLangFromUrl(url);
+  const t = useTranslations(lang);
   return (
     <motion.section
       initial={{ opacity: 0, x: 0 }}
@@ -11,7 +18,7 @@ export default function FormSection() {
       animate={{ opacity: 2, x: 0 }}
       transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
       viewport={{ once: true }}
-      className="max-w-[1600px] mx-auto px-[30px] md:px-[50px] transition-all ease-in-out">
+      className="max-w-[1600px] mx-auto px-[30px] md:px-[50px] mt-10 transition-all ease-in-out">
       <section className="grid grid-cols-1 gap-5 lg:grid-cols-2">
         <section className="flex flex-col justify-center h-fit">
           <h1
@@ -21,8 +28,19 @@ export default function FormSection() {
             }}
             className="font-bold max-w-xl font-primary"
           >
-            Tu Santuario de Lujo, <span className="text-blueBroker">Poseidonia</span> Residences <span className="text-blueBroker">Cana Bay</span>
+            {t('title')} <span className="text-blueBroker">Poseidonia</span> Residences <span className="text-blueBroker">Cana Bay</span>
           </h1>
+          <div className="w-full xl:max-w-[700px] border rounded-[22px] border-[#0000000F] mt-5 bg-cover">
+            <iframe
+              loading="lazy"
+              id="myIframe"
+              src="https://realbroker.alterestate.com/formulario-residencia-poseidonia"
+              width="100%"
+              height="100%"
+              title="Poseidonia Form"
+              className="min-h-[500px] lg:min-h-[500px] max-h-full mx-auto w-full rounded-[22px] transition-all ease-in-out"
+            ></iframe>
+          </div>
         </section>
         <section className="flex md:justify-center lg:justify-start">
           <section className="flex gap-x-5">

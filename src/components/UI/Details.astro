@@ -1,54 +1,48 @@
 ---
 import ContentMotion from "../react/ContentMotion";
 import ItemDetails from "./ItemDetails.astro";
+import Umbrella from "@/assets/svg/Umbrella.svg"
+import Lock from "@/assets/svg/Lock.svg"
+import Hotel from "@/assets/svg/Hotel.svg"
+const { t } = Astro.props;
 ---
 <ContentMotion client:visible sx='mt-20 md:mt-[180px] pb-[120px] rounded-br-[40px] rounded-bl-[40px] bg-white absoluteTop'>
   <section class="mx-auto w-full lg:max-w-[900px] transition-all ease-in-out flex flex-col gap-y-5 px-[30px] md:px-[45px]">
     <article class="rounded-lg">
       <header class="flex gap-x-5 h-full">
         <div>
-          <h2 class="text-black">Ubicación</h2>
-          <h3 class="text-[24px] leading-none font-bold text-black">Miches, RD</h3>
+          <h2 class="text-black">{t('location')}</h2>
+          <h3 class="text-[24px] leading-none font-bold text-black">Cana Bay</h3>
         </div>
         <div class="h-12 w-[1px] bg-grayBroker">
         </div>
         <div>
-          <h2 class="text-black">Desde</h2>
-          <h3 class="text-[24px] leading-none font-bold text-black">USD $225,000</h3>
+          <h2 class="text-black">{t('reserve')}</h2>
+          <h3 class="text-[24px] leading-none font-bold text-black">USD 5,000</h3>
         </div>
       </header>
       <p class="text-black w-full leading-7 mt-5">
-        Este exclusivo proyecto ofrece acceso en primera línea a playas vírgenes que mezclan las impresionantes vistas de cara al océano y un fondo montañoso, convirtiéndolo en una oportunidad de inversión con una extraordinaria proyección de plusvalía.
-        Aprovecha la oportunidad de invertir en la exclusividad de Miches, República Dominicana.
+        {t('details_description')}
       </p>
     </article>
     <div class="h-[1px] w-full bg-grayBroker">
     </div>
-    <article class="grid grid-cols-2 md:grid-cols-3 w-full max-w-2xl mx-auto gap-10">
+    <article class="grid grid-cols-1 md:grid-cols-3 w-full max-w-2xl mx-auto gap-10">
       <ItemDetails 
-        icon="../assets/Group.svg" 
-        content="3 Habitaciones" 
+        sx="items-center md:items-start"
+        icon={Umbrella.src}
+        content={t('details_item1')} 
       />
       <ItemDetails 
-        icon="../assets/Group.svg" 
-        content="3 Habitaciones" 
+         sx="items-center md:items-start"
+        icon={Lock.src}
+        content={t('details_item2')}
       />
-      <ItemDetails 
-        icon="../assets/Group.svg" 
-        content="3 Habitaciones" 
+      <ItemDetails
+        sx="items-center md:items-start min-w-[240px]" 
+        icon={Hotel.src}
+        content={t('details_item3')}
       />
-      <ItemDetails 
-        icon="../assets/Group.svg" 
-        content="3 Habitaciones" 
-      />
-      <ItemDetails 
-        icon="../assets/Group.svg" 
-        content="3 Habitaciones" 
-      />
-      <ItemDetails 
-        icon="../assets/Group.svg" 
-        content="3 Habitaciones" 
-        />
     </article>
   </section>
 </ContentMotion>

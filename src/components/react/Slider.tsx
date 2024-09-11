@@ -3,28 +3,39 @@ import { FreeMode, Keyboard, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide, } from 'swiper/react';
 import SliderItem from "./SliderItem";
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid'
+import { getLangFromUrl, useTranslations } from "@/utils/i18n";
 
-export default function Slider() {
+interface SliderProps {
+  url: URL
+}
+
+export default function Slider({ url }: SliderProps) {
+  const lang = getLangFromUrl(url);
+  const t = useTranslations(lang);
   const data = [
     {
       id: 1,
       image: '../assets/images/Slider1.webp',
-      description: 'Relájate y disfruta del sol caribeño en nuestro exclusivo y lujoso Beach Club.',
+      title: t('slider1Title'),
+      description: t('slider1'),
     },
     {
       id: 2,
       image: '../assets/images/Slider2.webp',
-      description: 'Relájate y disfruta del sol caribeño en nuestro exclusivo y lujoso Beach Club.',
+      title: t('slider2Title'),
+      description: t('slider2'),
     },
     {
       id: 3,
       image: '../assets/images/Slider3.webp',
-      description: 'Relájate y disfruta del sol caribeño en nuestro exclusivo y lujoso Beach Club.',
+      title: t('slider3Title'),
+      description: t('slider3'),
     },
     {
       id: 4,
       image: '../assets/images/Slider1.webp',
-      description: 'Relájate y disfruta del sol caribeño en nuestro exclusivo y lujoso Beach Club.',
+      title: t('slider4Title'),
+      description: t('slider4'),
     },
   ]
   return (
@@ -66,6 +77,7 @@ export default function Slider() {
               <SliderItem
                 key={item?.id}
                 image={item.image}
+                title={item.title}
                 description={item.description}
                 sx="mr-2"
               />
