@@ -1,10 +1,10 @@
 ---
-const {content, sx, icon = await Astro.slots.render('icon'), href} = Astro.props;
+const {content, sx, icon, title = await Astro.slots.render('icon'), href} = Astro.props;
 ---
 
 <a 
-  title="Contact Button"
-  aria-label="Contact Button"
+  title={title}
+  aria-label={title}
   href={href}
   target="_blank"
   rel="noopener noreferrer"
