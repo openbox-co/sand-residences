@@ -33,7 +33,7 @@ const t = useTranslations(lang);
 		<ContentMotion client:visible sx='mt-20 md:mt-[180px]'>
 			<Welcome t={t} />
 		</ContentMotion>
-			<Details t={t}  client:visible />
+			<Details t={t} />
 			<img src={ImageDivider.src} alt="ImageDivider" title="ImageDivider" class="w-full h-[460px] object-cover" />
 		<ContentMotion client:visible sx='rounded-tl-[40px] rounded-tr-[40px] bg-white absoluteBottom'>
 			<section class="absoluteHalf px-[30px]">
@@ -44,7 +44,7 @@ const t = useTranslations(lang);
 		<ContentMotion client:visible sx='absoluteBottomContent'>
 			<ApartmentsSection t={t}  />
 		</ContentMotion> 
-		<Banner t={t} client:visible />
+		<Banner t={t} />
 		<Tour3D t={t} /> 
 		<Amenities />
 		<AmenitiesZone t={t} />
@@ -60,6 +60,6 @@ const t = useTranslations(lang);
 				</iframe>
 			</section>
 		</ContentMotion> 
-		<Footer t={t} client:visible />
+		<Footer t={t} />
 	</body>
 </html>
