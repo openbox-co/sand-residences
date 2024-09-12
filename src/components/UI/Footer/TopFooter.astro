@@ -1,26 +1,26 @@
 ---
+import RealBroker from "@/assets/RealBroker.png";
+import Certificate from "@/assets/svg/Certificate.svg";
+import { EnvelopeIcon, PhoneArrowDownLeftIcon } from '@heroicons/react/24/solid';
 import Button from "../Buttons/Button.astro";
-import { EnvelopeIcon, PhoneArrowDownLeftIcon } from '@heroicons/react/24/solid'
-import RealBroker from "@/assets/RealBroker.png"
-import Certificate from "@/assets/svg/Certificate.svg"
 import ContactButton from "../Buttons/ContactButton.astro";
 const { t } = Astro.props;
 ---
 <section>
   <article class="flex flex-col justify-center items-center lg:justify-start lg:items-start">
-    <img src={RealBroker.src} alt="RealBroker" title="RealBroker" class="w-[230px] h-[70px]" loading="eager" />
+    <img src={RealBroker.src} alt="RealBroker" title="RealBroker" class="w-auto h-[72px]" loading="eager" />
     <section class="flex flex-col justify-center items-center md:flex-row gap-[6px] my-10">
-    <ContactButton content="8094435218" sx='w-fit' href='tel:+8094435218'>
+    <ContactButton content="8094435218" sx='w-fit' title="numero de contacto de real broker" href='tel:+8094435218'>
         <Fragment slot="icon">
           <PhoneArrowDownLeftIcon strokeWidth='3' className="w-[18px] h-[18px] text-white" />
         </Fragment>
       </ContactButton>
-      <ContactButton content="8292433673" sx='w-fit' href='tel:+8292433673'>
+      <ContactButton content="8292433673" sx='w-fit' href='tel:+8292433673' title="numero de contacto de real broker">
         <Fragment slot="icon">
           <PhoneArrowDownLeftIcon strokeWidth='3' className="w-[18px] h-[18px] text-white" />
         </Fragment>
       </ContactButton>
-      <ContactButton content="ventas@realbrokerrd.com" sx='w-fit' href='mailto:ventas@realbrokerrd.com'>
+      <ContactButton content="ventas@realbrokerrd.com" sx='w-fit' href='mailto:ventas@realbrokerrd.com' title="correo de contacto de real broker">
         <Fragment slot="icon">
           <EnvelopeIcon strokeWidth='3' className="w-[18px] h-[18px] text-white" />
         </Fragment>
@@ -37,14 +37,14 @@ const { t } = Astro.props;
           <Fragment slot="content">
             <a href="/" aria-label="Let's talk" target="_blank">
               <p class="hover:text-opacity-85">{t('footer_button')}</p>
-           </a>
+            </a>
           </Fragment>
         </Button>
         <Button sx='w-fit mt-5'>
           <Fragment slot="content">
             <a href="/" aria-label="Write to us" target="_blank">
               <p class="hover:text-opacity-85">{t('footer_button2')}</p>
-           </a>
+            </a>
           </Fragment>
         </Button>
       </div>
