@@ -1,9 +1,9 @@
+import { getLangFromUrl, useTranslations } from "@/utils/i18n";
+import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid';
 import 'swiper/css';
 import { FreeMode, Keyboard, Navigation, Pagination } from 'swiper/modules';
 import { Swiper, SwiperSlide, } from 'swiper/react';
 import SliderItem from "./SliderItem";
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid'
-import { getLangFromUrl, useTranslations } from "@/utils/i18n";
 
 interface SliderProps {
   url: URL
