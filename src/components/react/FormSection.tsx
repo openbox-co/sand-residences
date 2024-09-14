@@ -23,8 +23,8 @@ export default function FormSection({ url }: FormSectionProps) {
         <section className="flex flex-col justify-center h-fit">
           <h1
             style={{
-              fontSize: "clamp(42px, 3vw, 50px)",
-              lineHeight: "clamp(48px, 3vw, 58px)",
+              fontSize: "clamp(32px, 3vw, 48px)",
+              lineHeight: "clamp(32px, 3vw, 48px)",
             }}
             className="font-bold max-w-xl font-primary"
           >
@@ -37,17 +37,17 @@ export default function FormSection({ url }: FormSectionProps) {
             width="550px"
             height="480px"
             title="Poseidonia Form"
-            className="min-w-[280px] w-fit md:w-[420px] xl:w-[550px] border rounded-[22px] border-[#0000000F] transition-all ease-in-out mt-5"
+            className="min-w-[280px] w-full md:w-[420px] xl:w-[550px] border rounded-[22px] border-[#0000000F] transition-all ease-in-out mt-5"
           ></iframe>
         </section>
         <section className="flex md:justify-center lg:justify-start">
           <section className="flex gap-x-5">
             <section className="flex flex-col gap-y-5">
-              <img src={Image1.src} alt="Poseidonia residenciales" title="Poseidonia residenciales" className="rounded-[20px]" />
-              <img src={Image2.src} alt="Poseidonia precios" title="Poseidonia precios" className="rounded-[20px]" />
+              <img src={Image1.src} width='auto' height='auto' alt="Poseidonia residenciales" title="Poseidonia residenciales" className="rounded-[20px]" />
+              <img src={Image2.src} width='auto' height='auto' alt="Poseidonia precios" title="Poseidonia precios" className="rounded-[20px]" />
             </section>
             <section className="my-auto">
-              <img src={Image3.src} alt="Poseidonia cana bay" title="Poseidonia cana bay" className="rounded-[20px]" />
+              <img src={Image3.src} width='auto' height='auto' alt="Poseidonia cana bay" title="Poseidonia cana bay" className="rounded-[20px]" />
             </section>
           </section>
         </section>
