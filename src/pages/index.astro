@@ -1,5 +1,4 @@
 ---
-import ContentMotion from "@/components/react/ContentMotion";
 import FormSection from '@/components/react/FormSection';
 import Navbar from '@/components/react/Navbar';
 import Amenities from "@/components/UI/Amenities/Amenities.astro";
@@ -36,27 +35,27 @@ const t = useTranslations(lang);
 		<ViewTransitions transition:persist />
 	</head>
 	<body>
-		<Navbar url={Astro.url}  client:load  />
-		<FormSection url={Astro.url} client:load /> 
-		<ContentMotion client:visible sx='mt-20 md:mt-[180px]'>
+		<Navbar url={Astro.url}  client:visible  />
+		<FormSection url={Astro.url} client:visible /> 
+	 <section class='mt-20 md:mt-[180px]'> 
 			<Welcome t={t} />
-		</ContentMotion>
+	 	</section> 
 			<Details t={t} />
 			<img src={ImageDivider.src} alt="ImageDivider" title="ImageDivider" class="w-full h-[460px] object-cover" />
-		<ContentMotion client:visible sx='rounded-tl-[40px] rounded-tr-[40px] bg-white absoluteBottom'>
+		<section  class='rounded-tl-[40px] rounded-tr-[40px] bg-white absoluteBottom'>
 			<section class="absoluteHalf px-[30px]">
 				<div class="bg-grayBroker max-w-3xl mx-auto h-[400px] rounded-3xl">
 				</div>
 			</section>
-		</ContentMotion> 
-		<ContentMotion client:visible sx='absoluteBottomContent'>
+		</section> 
+		<section class='absoluteBottomContent'>
 			<ApartmentsSection t={t}  />
-		</ContentMotion> 
+		</section> 
 		<Banner t={t} />
 		<Tour3D t={t} /> 
 		<Amenities />
 		<AmenitiesZone t={t} />
-		<ContentMotion client:visible sx='!rounded-bl-[40px] !rounded-br-[40px] bg-white absoluteFooter'>
+		<section class='!rounded-bl-[40px] !rounded-br-[40px] bg-white absoluteFooter'>
 			<section class="absoluteFooterContent px-[30px]">
 				<iframe
 					title="map location of Poseidonia" 
@@ -68,7 +67,7 @@ const t = useTranslations(lang);
 				>
 				</iframe>
 			</section>
-		</ContentMotion> 
+		</section> 
 		<Footer t={t} />
 	</body>
 </html>
