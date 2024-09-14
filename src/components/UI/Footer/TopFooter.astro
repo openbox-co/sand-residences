@@ -15,7 +15,7 @@ const { t } = Astro.props;
           <PhoneArrowDownLeftIcon strokeWidth='3' className="w-[18px] h-[18px] text-white" />
         </Fragment>
       </ContactButton>
-      <ContactButton content="8292433673" sx='w-fit' href='tel:+8292433673' title="numero de contacto de real broker">
+      <ContactButton content="8292433673" sx='w-fit' href='tel:+8292433673' title="numero de contacto 2 de real broker">
         <Fragment slot="icon">
           <PhoneArrowDownLeftIcon strokeWidth='3' className="w-[18px] h-[18px] text-white" />
         </Fragment>
@@ -35,14 +35,7 @@ const { t } = Astro.props;
       <div class="flex gap-x-5">
         <Button sx='w-fit mt-5'>
           <Fragment slot="content">
-            <a href="/" aria-label="Let's talk" target="_blank">
-              <p class="hover:text-opacity-85">{t('footer_button')}</p>
-            </a>
-          </Fragment>
-        </Button>
-        <Button sx='w-fit mt-5'>
-          <Fragment slot="content">
-            <a href="/" aria-label="Write to us" target="_blank">
+            <a href="https://api.whatsapp.com/send?phone=+18094435218&text=Hola,%20me%20gustar%C3%ADa%20obtener%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20nuevo%20proyecto%20Poseidonia." aria-label="poseidonia boton de contacto" title="poseidonia boton de contacto" target="_blank">
               <p class="hover:text-opacity-85">{t('footer_button2')}</p>
             </a>
           </Fragment>
@@ -63,7 +56,9 @@ const { t } = Astro.props;
           {t('footer_certified')}
         </h3>
         <section class="flex flex-col gap-y-1 items-center lg:items-start">
-          <img src={Certificate.src} alt="Certificate" title="Certificate" class="w-[108px] h-[108px]" />
+          <a href="https://certificaciones.uaf.gob.do/certificaciones_so_view.php?editid1=303" aria-label="Certificate url link" title="certificaciones uaf gob do" target="_blank">
+            <img src={Certificate.src} alt="Certificate" title="certificaciones uaf gob do " class="w-[108px] h-[108px]" />
+          </a>
         </section>
       </div>
     </section>

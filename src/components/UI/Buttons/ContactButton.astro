@@ -7,7 +7,7 @@ const {content, sx, icon, title = await Astro.slots.render('icon'), href} = Astr
   aria-label={title}
   href={href}
   target="_blank"
-  rel="noopener noreferrer"
+
   class={`flex gap-x-2 justify-center items-center border border-[#FFFFFF33] py-[6px] px-[14px] rounded-xl cursor-pointer bg-transparent ${sx}`}>
   {icon && <slot name="icon">{icon}</slot>}
   {content && <p class="text-white font-normal font-primary text-[14px]">{content}</p> }

@@ -27,13 +27,13 @@ export default function Slider({ url }: SliderProps) {
     },
     {
       id: 3,
-      image: '../assets/images/Slider3.webp',
+      image: '../assets/images/Slider1.webp',
       title: t('slider3Title'),
       description: t('slider3'),
     },
     {
       id: 4,
-      image: '../assets/images/Slider1.webp',
+      image: '../assets/images/Slider4.webp',
       title: t('slider4Title'),
       description: t('slider4'),
     },

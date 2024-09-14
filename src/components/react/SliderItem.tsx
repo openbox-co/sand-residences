@@ -12,6 +12,7 @@ export default function SliderItem({ image, title, description, sx }: ISliderIte
         width={286}
         height={280}
         className="w-full h-[280px] object-cover rounded-[22px]"
+        title={`Poseidonia ${title}`}
         src={image}
         alt="Image"
       />
