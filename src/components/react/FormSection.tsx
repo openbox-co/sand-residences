@@ -2,7 +2,6 @@ import Image1 from "@/assets/Image1.webp";
 import Image2 from "@/assets/Image2.webp";
 import Image3 from "@/assets/Image3.webp";
 import { getLangFromUrl, useTranslations } from "@/utils/i18n";
-import { motion } from "framer-motion";
 
 interface FormSectionProps {
   url: URL
@@ -12,12 +11,7 @@ export default function FormSection({ url }: FormSectionProps) {
   const lang = getLangFromUrl(url);
   const t = useTranslations(lang);
   return (
-    <motion.section
-      initial={{ opacity: 0, x: 0 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      animate={{ opacity: 2, x: 0 }}
-      transition={{ duration: 1, delay: 0.2, ease: "easeInOut" }}
-      viewport={{ once: true }}
+    <section
       className="max-w-[1600px] mx-auto px-[30px] md:px-[50px] mt-10 transition-all ease-in-out">
       <section className="grid grid-cols-1 gap-5 lg:grid-cols-2">
         <section className="flex flex-col justify-center h-fit">
@@ -52,6 +46,6 @@ export default function FormSection({ url }: FormSectionProps) {
           </section>
         </section>
       </section>
-    </motion.section>
+    </section>
   )
 }
