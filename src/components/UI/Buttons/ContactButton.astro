@@ -1,5 +1,5 @@
 ---
-const {content, sx, icon, title = await Astro.slots.render('icon'), href} = Astro.props;
+const {content, sx, icon = await Astro.slots.render('icon'), title = await Astro.slots.render('title'), href} = Astro.props;
 ---
 
 <a 
