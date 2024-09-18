@@ -32,37 +32,39 @@ const t = useTranslations(lang);
 		<ViewTransitions transition:persist />
 	</head>
 	<body>
-		<Navbar url={Astro.url}  client:load  />
-		<FormSection url={Astro.url} client:load /> 
-		<ContentMotion client:visible sx='mt-20 md:mt-[180px]'>
+		<Navbar url={Astro.url}  client:visible />
+		<FormSection url={Astro.url} client:visible /> 
+		<section class='mt-20 md:mt-[180px]'> 
 			<Welcome t={t} />
-		</ContentMotion>
+	 	</section> 
 			<Details t={t} />
 			<img src={ImageDivider.src} alt="ImageDivider" title="ImageDivider" class="w-full h-[460px] object-cover" />
-		<ContentMotion client:visible sx='rounded-tl-[40px] rounded-tr-[40px] bg-white absoluteBottom'>
-			<section class="absoluteHalf px-[30px]">
-				<div class="bg-grayBroker max-w-3xl mx-auto h-[400px] rounded-3xl">
-				</div>
-			</section>
-		</ContentMotion> 
-		<ContentMotion client:visible sx='absoluteBottomContent'>
+			<section class='rounded-tl-[40px] rounded-tr-[40px] bg-white absoluteBottom'>
+				<section class="absoluteHalf px-[30px]">
+					<div class="bg-grayBroker max-w-3xl mx-auto h-[400px] rounded-3xl">
+					</div>
+				</section>
+			</section> 
+		<section class='absoluteBottomContent'>
 			<ApartmentsSection t={t}  />
-		</ContentMotion> 
+		</section> 
 		<Banner t={t} />
 		<Tour3D t={t} /> 
 		<Amenities />
 		<AmenitiesZone t={t} />
-		<ContentMotion client:visible sx='!rounded-bl-[40px] !rounded-br-[40px] bg-white absoluteFooter'>
+		<section class='!rounded-bl-[40px] !rounded-br-[40px] bg-white absoluteFooter'>
 			<section class="absoluteFooterContent px-[30px]">
 				<iframe
-					class="mx-auto w-full lg:max-w-[600px] h-[400px] rounded-3xl"
-					src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=10.96785693995,-74.79259371757509&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+					title="map location of Poseidonia" 
+					class="mx-auto w-full lg:max-w-[840px] h-[420px] rounded-3xl"
+					src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15114.767986569062!2d-68.4862043!3d18.7226027!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ea8eb002e0700f1%3A0x4c72e1efd0ca297e!2sPoseidonia%20by%20Noval!5e0!3m2!1ses!2sco!4v1726272461169!5m2!1ses!2sco"
 					allowfullscreen=""
+					referrerpolicy="no-referrer-when-downgrade"
 					loading="lazy"
 				>
 				</iframe>
 			</section>
-		</ContentMotion> 
+		</section> 
 		<Footer t={t}/>
 	</body>
 </html>
