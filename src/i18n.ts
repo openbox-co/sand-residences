@@ -69,8 +69,8 @@ export const i18n = {
       "Aeropuerto Internacional de Punta Cana: A solo unos minutos en coche, facilitando el acceso a conexiones internacionales.",
     //Footer
     footer_title:
-      "Tu propiedad ideal, sea apartamento o casa en venta o alquiler en Santo Domingo y la República Dominicana con",
-    footer_title_bold: "los mejores agentes expertos inmobiliarios.",
+      "¡Tus Reales Asesores Inmobiliarios! Expertos en inversiones de alto retorno 9 años ofreciendo soluciones inmobiliarias en RD.",
+    footer_title_bold: "Crece financieramente.",
     footer_button: "Conversemos",
     footer_button2: "Escríbenos",
     footer_our_office: "Nuestra Oficina",
@@ -139,8 +139,8 @@ export const i18n = {
       "Punta Cana International Airport: Just a few minutes by car, facilitating access to international connections.",
     //Footer
     footer_title:
-      "Your ideal property, whether it's an apartment or house for sale or rent in Santo Domingo and the Dominican Republic with",
-    footer_title_bold: "the best real estate expert agents.",
+      "Your Real Estate Advisors! Experts in high return investments 9 years offering real estate solutions in RD.",
+    footer_title_bold: "Grow financially.",
     footer_button: "Let's talk",
     footer_button2: "Write to us",
     footer_our_office: "Our Office",
