@@ -12,7 +12,7 @@ const { t } = Astro.props;
 ---
 <section>
   <article class="flex flex-col justify-center items-center lg:justify-start lg:items-start">
-    <img src={RealBroker.src} width='auto' height='72px' alt="RealBroker" title="RealBroker" class="w-auto h-[72px]" loading="eager" />
+    <img src={RealBroker.src} width={250} height={72} alt="RealBroker" title="RealBroker" loading="eager" />
     <section class="flex flex-col justify-center items-center md:flex-row gap-[6px] my-10">
     <ContactButton content="8094435218" sx='w-fit' title="numero de contacto de real broker" href='tel:+8094435218'>
         <Fragment slot="icon">
@@ -47,22 +47,22 @@ const { t } = Astro.props;
         <article class="flex gap-x-[12px]">
           <ContactButton sx='!w-fit !px-[7px]' title='Instagram Gustavo Real Broker' href='https://www.instagram.com/realbrokerrd/'>
             <Fragment slot="icon">
-              <img src={Instagram.src} width="22px" height="22px" alt="Instagram" title="Instagram Gustavo Real Broker" class="!w-[22px] !h-[22px]"/>
+              <img src={Instagram.src} width={22} height={22} alt="Instagram" title="Instagram Gustavo Real Broker" />
             </Fragment>
           </ContactButton>
           <ContactButton sx='!w-fit !px-[7px]' title="Facebook Gustavo Real Broker" href='https://www.facebook.com/realbrokerrd'>
             <Fragment slot="icon">
-              <img src={Facebook.src} width="22px" height="22px" alt="Facebook" title="Facebook Gustavo Real Broker" class="!w-[22px] !h-[22px]"/>
+              <img src={Facebook.src} width={22} height={22} alt="Facebook" title="Facebook Gustavo Real Broker" />
             </Fragment>
           </ContactButton>
           <ContactButton sx='!w-fit !px-[7px]' title="Youtube Gustavo Real Broker" href='https://www.youtube.com/channel/UCG_CUKuTMLcL6fnf4TTx36Q/featured'>
             <Fragment slot="icon">
-              <img src={Youtube.src} width="22px" height="22px" alt="Youtube" title="Youtube Gustavo Real Broker" class="!w-[22px] !h-[22px]"/>
+              <img src={Youtube.src} width={22} height={22} alt="Youtube" title="Youtube Gustavo Real Broker" />
             </Fragment>
           </ContactButton>
           <ContactButton sx='!w-fit !px-[7px]' title="Tiktok Gustavo Real Broker" href='https://www.tiktok.com/@gustavorealbroker?_t=8pfQY724Vao&_r=1'>
             <Fragment slot="icon">
-              <img src={Tiktok.src} width="22px" height="22px" alt="Tiktok" title="Tiktok  Gustavo Real Broker" class="!w-[22px] !h-[22px]"/>
+              <img src={Tiktok.src} width={22} height={22} alt="Tiktok" title="Tiktok  Gustavo Real Broker" />
             </Fragment>
           </ContactButton>
         </article>
@@ -83,7 +83,7 @@ const { t } = Astro.props;
         </h3>
         <section class="flex flex-col gap-y-1 items-center lg:items-start">
           <a href="https://certificaciones.uaf.gob.do/certificaciones_so_view.php?editid1=303" aria-label="Certificate url link" title="certificaciones uaf gob do" target="_blank">
-            <img src={Certificate.src} width='108px' height='108px' alt="Certificate" title="certificaciones uaf gob do " class="w-[108px] h-[108px]" />
+            <img src={Certificate.src} width={90} height={90} alt="Certificate" title="certificaciones uaf gob do" />
           </a>
         </section>
       </div>
