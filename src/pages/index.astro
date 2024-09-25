@@ -23,10 +23,10 @@ const t = useTranslations(lang);
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" title="favicon poseidonia" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<!-- <meta
+		<meta
 			property="og:image"
-			content="https://openbox.com.co/SEO.jpeg"
-		/> -->
+			content="https://poseidonia.gustavorealbroker.com/SEO.jpeg"
+		/>
 		<title>Poseidonia Residences Cana Bay</title>
 		<meta
 			name="description"
@@ -37,9 +37,9 @@ const t = useTranslations(lang);
 	<body>
 		<Navbar url={Astro.url}  client:visible  />
 		<FormSection url={Astro.url} client:visible /> 
-	 <section class='mt-20 md:mt-[180px]'> 
+	<section class='mt-20 md:mt-[180px]'> 
 			<Welcome t={t} />
-	 	</section> 
+	</section> 
 			<Details t={t} />
 			<img src={ImageDivider.src} alt="ImageDivider" title="ImageDivider" class="w-full h-[460px] object-cover" />
 		<section class='rounded-tl-[40px] rounded-tr-[40px] bg-white absoluteBottom'>
