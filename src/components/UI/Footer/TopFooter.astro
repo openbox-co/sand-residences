@@ -8,20 +8,11 @@ import Youtube from "@/assets/svg/Youtube.svg";
 import { EnvelopeIcon, PhoneArrowDownLeftIcon } from '@heroicons/react/24/solid';
 import Button from "../Buttons/Button.astro";
 import ContactButton from "../Buttons/ContactButton.astro";
-import { Picture } from "astro:assets";
 const { t } = Astro.props;
 ---
 <section>
   <article class="flex flex-col justify-center items-center lg:justify-start lg:items-start">
-    <Picture
-      width={250}
-      height={72}
-      src={RealBroker}
-      alt="RealBroker" 
-      title="RealBroker"
-      loading={'eager'}
-      sizes="(min-width: 1024px) 250px, 100vw"
-    />
+    <img src={RealBroker.src} width={250} height={72} alt="RealBroker" title="RealBroker" loading="eager" />
     <section class="flex flex-col justify-center items-center md:flex-row gap-[6px] my-10">
     <ContactButton content="8094435218" sx='w-fit' title="numero de contacto de real broker" href='tel:+8094435218'>
         <Fragment slot="icon">
@@ -92,15 +83,7 @@ const { t } = Astro.props;
         </h3>
         <section class="flex flex-col gap-y-1 items-center lg:items-start">
           <a href="https://certificaciones.uaf.gob.do/certificaciones_so_view.php?editid1=303" aria-label="Certificate url link" title="certificaciones uaf gob do" target="_blank">
-            <Picture
-              width={108} 
-              height={135}
-              src={Certificate}
-              alt="Certificate" 
-              title="certificaciones uaf gob do"
-              loading={'eager'}
-              sizes="(min-width: 1024px) 108px, 100vw"
-            />
+            <img src={Certificate.src} width={90} height={90} alt="Certificate" title="certificaciones uaf gob do" />
           </a>
         </section>
       </div>

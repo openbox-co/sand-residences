@@ -2,36 +2,14 @@
 import Sponsor1 from "@/assets/Sponsor1.png";
 import Sponsor2 from "@/assets/Sponsor2.png";
 import Sponsor3 from "@/assets/Sponsor3.png";
-import { Picture } from "astro:assets";
 const { t } = Astro.props;
 ---
 
 <article class="flex flex-col-reverse md:flex-row justify-between w-full gap-y-10">
   <section class="flex justify-center items-center gap-4">
-    <Picture
-      width={59}
-      height={52}
-      src={Sponsor1}
-      alt="AEI" 
-      title="AEI"
-      sizes="(min-width: 1024px) 59px, 100vw"
-    />
-    <Picture
-      width={42}
-      height={52}
-      src={Sponsor2}
-      alt="Confederación Inmobiliaria Latinoamericana: CILA" 
-      title="Confederación Inmobiliaria Latinoamericana: CILA"
-      sizes="(min-width: 1024px) 42px, 100vw"
-    />
-    <Picture
-      width={205}
-      height={52}
-      src={Sponsor3}
-      alt="National Association of Realtors | Real Broker"
-      title="National Association of Realtors | Real Broker"
-      sizes="(min-width: 1024px) 205px, 100vw"
-    />
+    <img src={Sponsor1.src} width={59} height={52} alt="AEI" title="AEI" />
+    <img src={Sponsor2.src} width={42} height={52} alt="Confederación Inmobiliaria Latinoamericana: CILA" title="Confederación Inmobiliaria Latinoamericana: CILA" />
+    <img src={Sponsor3.src} width={205} height={52} alt="National Association of Realtors | Real broker" title="National Association of Realtors | Real broker" />
   </section>
   <section class="flex flex-col gap-y-1 font-primary text-white text-[14px] text-center md:text-right">
     <p>
