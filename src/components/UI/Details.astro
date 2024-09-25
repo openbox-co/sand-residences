@@ -1,9 +1,9 @@
 ---
+import Hotel from "@/assets/svg/Hotel.svg";
+import Lock from "@/assets/svg/Lock.svg";
+import Umbrella from "@/assets/svg/Umbrella.svg";
 import ContentMotion from "../react/ContentMotion";
 import ItemDetails from "./ItemDetails.astro";
-import Umbrella from "@/assets/svg/Umbrella.svg"
-import Lock from "@/assets/svg/Lock.svg"
-import Hotel from "@/assets/svg/Hotel.svg"
 const { t } = Astro.props;
 ---
 <ContentMotion client:visible sx='mt-20 md:mt-[180px] pb-[120px] rounded-br-[40px] rounded-bl-[40px] bg-white absoluteTop'>
@@ -34,7 +34,7 @@ const { t } = Astro.props;
         content={t('details_item1')} 
       />
       <ItemDetails 
-         sx="items-center md:items-start"
+        sx="items-center md:items-start"
         icon={Lock.src}
         content={t('details_item2')}
       />
