@@ -9,7 +9,7 @@ export const showDefaultLang = false;
 export const i18n = {
   es: {
     //Form
-    title: "Tu Santuario de Lujo,",
+    title: "El Paraíso que Mereces,",
     //Welcome
     welcome: "Bienvenido a",
     welcome_subtitle:
@@ -80,7 +80,7 @@ export const i18n = {
   },
   en: {
     //Form
-    title: "Your Luxury Sanctuary,",
+    title: "The Paradise You Deserve,",
     //Welcome
     welcome: "Welcome to",
     welcome_subtitle:
