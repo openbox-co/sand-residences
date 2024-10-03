@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         blackBroker: "#212121",
-        blueBroker: "#4099D1",
+        blueBroker: "#8A7769",
         grayBroker: "#D9D9D9",
         whiteContainBroker: "#FCFCFC",
       },
