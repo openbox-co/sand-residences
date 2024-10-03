@@ -22,15 +22,15 @@ export default function FormSection({ url }: FormSectionProps) {
             }}
             className="font-bold max-w-xl font-primary"
           >
-            {t('title')} <span className="text-blueBroker">Poseidonia</span> Residences <span className="text-blueBroker">Cana Bay</span>
+            {t('title')} <span className="text-blueBroker"> Sand Residences Cap Cana</span>
           </h1>
           <iframe
             loading="lazy"
             id="myIframe"
-            src="https://realbroker.alterestate.com/formulario-residencia-poseidonia"
+            src="https://realbroker.alterestate.com/formulario-sand-residences"
             width="550px"
             height="480px"
-            title="Poseidonia Form"
+            title="sand residences Form"
             className="min-w-[280px] w-full md:w-[420px] xl:w-[550px] border rounded-[22px] border-[#0000000F] transition-all ease-in-out mt-5"
           ></iframe>
         </section>
