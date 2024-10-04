@@ -31,7 +31,7 @@ export const i18n = {
     //Banner
     banner_title: "Reserva con USD$1000",
     banner_subtitle:
-      "eparación 10% (Incluye el monto de la reserva). Durante construcción 20% Contra entrega 70%",
+      "Separación 10% (Incluye el monto de la reserva). Durante construcción 20% Contra entrega 70%",
     //Tour3D
     tour3d_button: "Tour 3D (Hacer recorrido)",
     //Amenities
