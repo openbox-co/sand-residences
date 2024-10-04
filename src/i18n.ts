@@ -13,7 +13,7 @@ export const i18n = {
     //Welcome
     welcome: "Bienvenido a",
     welcome_subtitle:
-      "Poseidonia Residences en Cana Bay es un proyecto residencial de lujo que combina a la perfección el estilo clásico con la comodidad contemporánea, brindando un entorno ideal para quienes buscan una vida sofisticada y tranquila. Inspirado en las villas históricas europeas, este enclave exclusivo en Punta Cana ofrece una experiencia única, fusionando el lujo mediterráneo con la serenidad tropical del Caribe. Diseñado para satisfacer los gustos más exigentes, Poseidonia Residences promete un espacio de tranquilidad y confort sin igual en el exclusivo complejo Cana Bay.",
+      "Sand Residences  en Cana Bay es un proyecto residencial de lujo que combina a la perfección el estilo clásico con la comodidad contemporánea, brindando un entorno ideal para quienes buscan una vida sofisticada y tranquila. Inspirado en las villas históricas europeas, este enclave exclusivo en Punta Cana ofrece una experiencia única, fusionando el lujo mediterráneo con la serenidad tropical del Caribe. Diseñado para satisfacer los gustos más exigentes, Poseidonia Residences promete un espacio de tranquilidad y confort sin igual en el exclusivo complejo Cana Bay.",
     welcome_button: "Reserva tu cita hoy",
     //Details
     location: "Ubicación",
@@ -84,7 +84,7 @@ export const i18n = {
     //Welcome
     welcome: "Welcome to",
     welcome_subtitle:
-      "Poseidonia Residences at Cana Bay is a luxury residential project that perfectly combines classic style with contemporary comfort, providing an ideal setting for those seeking a sophisticated and tranquil lifestyle. Inspired by historic European villas, this exclusive enclave in Punta Cana offers a unique experience, blending Mediterranean luxury with the tropical serenity of the Caribbean. Designed to meet the most discerning tastes, Poseidonia Residences promises an unparalleled space of tranquility and comfort within the exclusive Cana Bay complex.",
+      "Sand Residences  at Cana Bay is a luxury residential project that perfectly combines classic style with contemporary comfort, providing an ideal setting for those seeking a sophisticated and tranquil lifestyle. Inspired by historic European villas, this exclusive enclave in Punta Cana offers a unique experience, blending Mediterranean luxury with the tropical serenity of the Caribbean. Designed to meet the most discerning tastes, Poseidonia Residences promises an unparalleled space of tranquility and comfort within the exclusive Cana Bay complex.",
     welcome_button: "Book your appointment today",
     //Details
     location: "Location",
