@@ -56,15 +56,15 @@ export const i18n = {
     private_location_blue: "Ubicación Privilegiada",
     private_location_black: "En Cap Cana",
     private_item1:
-      "Hard Rock Hotel & Casino: Un destino popular para entretenimiento y ocio.",
+      "Un destino destacado para entretenimiento y ocio, con diversas opciones para disfrutar.",
     private_item2:
-      "Centro de Punta Cana: Con tiendas, restaurantes y actividades culturales.",
+      "Acceso a tiendas, restaurantes y actividades culturales que enriquecen la experiencia local.",
     private_item3:
-      "Disfruta de todos los servicios que necesitas en la propiedad y en espacios próximos.",
+      "Para garantizar la tranquilidad y bienestar de todos los residentes.",
     private_item4:
       "Servicios de seguridad de primer nivel, para garantizar la tranquilidad de todos los residentes.",
     private_item5:
-      "Playa de Arena Gorda:Una de las playas más espectaculares de la República Dominicana.",
+      "Playa Juanillo: Una de las playas más impresionantes de la República Dominicana, perfecta para relajarse y disfrutar del sol.",
     private_item6:
       "Aeropuerto Internacional de Punta Cana: A solo unos minutos en coche, facilitando el acceso a conexiones internacionales.",
     //Footer
@@ -125,15 +125,15 @@ export const i18n = {
     private_location_blue: "Privileged Location",
     private_location_black: "In Cap Cana",
     private_item1:
-      "Hard Rock Hotel & Casino: A popular destination for entertainment and leisure.",
+      "A prominent destination for entertainment and leisure, with various options to enjoy.",
     private_item2:
-      "Punta Cana Center: With shops, restaurants, and cultural activities.",
+      "Access to shops, restaurants, and cultural activities that enrich the local experience.",
     private_item3:
-      "Enjoy all the services you need on the property and in nearby spaces.",
+      "To ensure the tranquility and well-being of all residents.",
     private_item4:
-      "First-rate security services, to ensure the tranquility of all residents.",
+      "Top-notch security services to ensure the tranquility of all residents.",
     private_item5:
-      "Arena Gorda Beach: One of the most spectacular beaches in the Dominican Republic.",
+      "Juanillo Beach: One of the most stunning beaches in the Dominican Republic, perfect for relaxing and enjoying the sun.",
     private_item6:
       "Punta Cana International Airport: Just a few minutes by car, facilitating access to international connections.",
     //Footer
