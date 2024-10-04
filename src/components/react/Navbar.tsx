@@ -1,4 +1,4 @@
-import Logo from '@/assets/Logo.png'
+import Logo from '@/assets/Logo.png';
 import SwitchLang from "./SwitchLang";
 
 interface Props {
@@ -15,8 +15,8 @@ export default function Navbar({ url }: Props) {
             width={319}
             height={30}
             src={Logo.src}
-            alt="Logo Poseidonia"
-            title=" Logo Poseidonia"
+            alt="Logo Sand Residences"
+            title=" Logo Sand Residences"
             className="justify-center w-[200px] sm:w-[319px]">
           </img>
         </div>
