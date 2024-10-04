@@ -30,18 +30,18 @@ export default function FormSection({ url }: FormSectionProps) {
             src="https://realbroker.alterestate.com/formulario-sand-residences"
             width="550px"
             height="480px"
-            title="sand residences Form"
+            title="Sand Residences  Form"
             className="min-w-[280px] w-full md:w-[420px] xl:w-[550px] border rounded-[22px] border-[#0000000F] transition-all ease-in-out mt-5"
           ></iframe>
         </section>
         <section className="flex md:justify-center lg:justify-start">
           <section className="flex gap-x-5">
             <section className="flex flex-col gap-y-5">
-              <img src={Image1.src} width='auto' height='auto' alt="Poseidonia residenciales" title="Poseidonia residenciales" className="rounded-[20px]" />
-              <img src={Image2.src} width='auto' height='auto' alt="Poseidonia precios" title="Poseidonia precios" className="rounded-[20px]" />
+              <img src={Image1.src} width='auto' height='auto' alt="Sand Residences " title="Sand Residences " className="rounded-[20px]" />
+              <img src={Image2.src} width='auto' height='auto' alt="Sand Residences precios" title="Sand Residences precios" className="rounded-[20px]" />
             </section>
             <section className="my-auto">
-              <img src={Image3.src} width='auto' height='auto' alt="Poseidonia cana bay" title="Poseidonia cana bay" className="rounded-[20px]" />
+              <img src={Image3.src} width='auto' height='auto' alt="Sand Residences Cap Cana" title="Sand Residences Cap Cana" className="rounded-[20px]" />
             </section>
           </section>
         </section>
