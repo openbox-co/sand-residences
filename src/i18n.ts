@@ -30,8 +30,7 @@ export const i18n = {
     apartments_button: "Brochure y Disponibilidad",
     //Banner
     banner_title: "Reserva con USD$3000",
-    banner_subtitle:
-      "Firma de contrato 15%. Durante la construcción 35%",
+    banner_subtitle: "Firma de contrato 15%. Durante la construcción 35%",
     //Tour3D
     tour3d_button: "Tour 3D (Hacer recorrido)",
     //Amenities
@@ -48,7 +47,8 @@ export const i18n = {
     slider2:
       "Mantente en forma en nuestro gimnasio completamente equipado, sin salir de casa.",
     slider3Title: "Zona de BBQ y Gazebo",
-    slider3: "Comparte momentos especiales con familia y amigos en nuestra cómoda área de BBQ.",
+    slider3:
+      "Comparte momentos especiales con familia y amigos en nuestra cómoda área de BBQ.",
     slider4Title: "Amplios Balcones",
     slider4:
       "Disfruta de vistas panorámicas desde tu balcón privado, ideal para relajarte y admirar el entorno tropical que rodea tu hogar.",
@@ -76,7 +76,7 @@ export const i18n = {
     footer_our_office: "Nuestra Oficina",
     footer_certified: "Certificados por",
     all_rights: "Todos los derechos reservados",
-    developed_by: "Diseñado y Desarrollado por Open Box",
+    developed_by: "To Perform - Por Open Box",
   },
   en: {
     //Form
@@ -114,10 +114,10 @@ export const i18n = {
     slider1:
       "Enjoy a refreshing swim in our exclusive pool, surrounded by a tropical environment.",
     slider2Title: "Modern Gym",
-    slider2:
-      "Stay in shape in our fully equipped gym, without leaving home.",
+    slider2: "Stay in shape in our fully equipped gym, without leaving home.",
     slider3Title: "BBQ Area and Gazebo",
-    slider3: "Share special moments with family and friends in our comfortable BBQ area.",
+    slider3:
+      "Share special moments with family and friends in our comfortable BBQ area.",
     slider4Title: "Spacious Balconies",
     slider4:
       "Enjoy panoramic views from your private balcony, ideal for relaxing and admiring the tropical surroundings of your home.",
@@ -128,8 +128,7 @@ export const i18n = {
       "A prominent destination for entertainment and leisure, with various options to enjoy.",
     private_item2:
       "Access to shops, restaurants, and cultural activities that enrich the local experience.",
-    private_item3:
-      "To ensure the tranquility and well-being of all residents.",
+    private_item3: "To ensure the tranquility and well-being of all residents.",
     private_item4:
       "Top-notch security services to ensure the tranquility of all residents.",
     private_item5:
@@ -145,6 +144,6 @@ export const i18n = {
     footer_our_office: "Our Office",
     footer_certified: "Certified by",
     all_rights: "All rights reserved",
-    developed_by: "Designed and Developed by Open Box",
+    developed_by: "To Perform - Por Open Box",
   },
 };
